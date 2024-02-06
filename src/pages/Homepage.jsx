@@ -7,7 +7,7 @@ export default function Homepage() {
       <PageNav />
       <h1>WorldWise</h1>
       {/* <a href="/Pricing">Pricing</a>  */}
-      <Link to="/pricing">Pricing</Link>
+      <Link to="/app">Go to the App</Link>
     </div>
   )
 }
