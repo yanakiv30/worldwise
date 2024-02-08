@@ -8,7 +8,8 @@ import Login from "./pages/Login";
 
 export default function App() {
 
-  return <BrowserRouter>
+  return (
+  <BrowserRouter>
   <Routes>
     <Route path ="/" element ={<Homepage />}/>
     <Route path ="pricing" element ={<Pricing />}/>
@@ -18,4 +19,5 @@ export default function App() {
     <Route path = "*" element={<PageNotFound/>}/>
   </Routes>
   </BrowserRouter>
+  );
 }
