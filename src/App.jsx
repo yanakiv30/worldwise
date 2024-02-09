@@ -6,8 +6,21 @@ import AppLayout from "./pages/AppLayout";
 import PageNotFound from "./pages/PageNotFound";
 import Login from "./pages/Login";
 import CityList from "./componenets/CityList";
+import { useState } from "react";
+import { useEffect } from "react";
 
+const BASE_URL="https://http://localhost:9000";
 export default function App() {
+  const [cities, setCities] = useState({});
+  [isLoading, setIsLoading] = useState(false);
+
+  useEffect(function() {
+  async function fetchCities() {
+    const res = await fetch(`${BASE_URL}/cities`);
+    const data = await res.json();
+    setCities(data);
+  }
+  },[])
   return (
     <BrowserRouter>
       <Routes>
