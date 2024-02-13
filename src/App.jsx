@@ -9,6 +9,7 @@ import PageNotFound from "./pages/PageNotFound";
 import Login from "./pages/Login";
 import CityList from "./componenets/CityList";
 import CountryList from "./componenets/CountryList";
+import City from "./componenets/City";
 
 const BASE_URL = "http://localhost:9000";
 export default function App() {
@@ -41,7 +42,9 @@ export default function App() {
         <Route path="app" element={<AppLayout />}>
           <Route index element={<CityList cities={cities} isLoading={isLoading} />} />
           <Route path="cities" element={<CityList cities={cities} isLoading={isLoading} />} />
-          <Route path = "cities/:id" />
+
+          <Route path = "cities/:id" element={<City />}/>
+
           <Route path="countries" element={<CountryList cities={cities} 
           isLoading={isLoading} />} />
           <Route path="form" element={<p>Form</p>} />
