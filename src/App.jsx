@@ -10,10 +10,11 @@ import CityList from "./componenets/CityList";
 import CountryList from "./componenets/CountryList";
 import City from "./componenets/City";
 import Form from "./componenets/Form";
-import { CitiesProvider } from "./contexts/CitiesContext";
+import { CitProvider } from "./contexts/CitContext";
+// import { CitiesProvider } from "./contexts/CitiesContext";
 export default function App() {
   return (
-    <CitiesProvider>
+    <CitProvider>
       <BrowserRouter>
         <Routes>
           <Route index element={<Homepage />} />
@@ -30,6 +31,6 @@ export default function App() {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
-    </CitiesProvider>
+    </CitProvider>
   );
 }
