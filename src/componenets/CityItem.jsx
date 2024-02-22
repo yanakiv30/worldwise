@@ -1,4 +1,5 @@
-import { useValues } from "../contexts/CitContext";
+//import { useValues } from "../contexts/CitContext";
+import { useCities } from "../contexts/CitiesContext";
 import styles from "./CityItem.module.css";
 import { Link } from "react-router-dom";
 
@@ -10,7 +11,7 @@ const formatDate = (date) =>
   }).format(new Date(date));
 
 export default function CityItem({ city }) {
-  const {currentCity} = useValues();
+  const {currentCity} = useCities();
   const { cityName, emoji, date, id, position } = city;
 
   return (

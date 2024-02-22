@@ -24,7 +24,7 @@ function CitProvider({ children }) {
     }
     fetchCities();
   }, []);
-
+ 
   async function getCity(id) {
     
       try {

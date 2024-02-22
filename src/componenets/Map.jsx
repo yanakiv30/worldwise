@@ -10,13 +10,15 @@ import {
   useMapEvent,
 } from "react-leaflet";
 import { useEffect, useState } from "react";
-import { useValues } from "../contexts/CitContext";
+
+import { useCities } from "../contexts/CitiesContext";
 import { useGeolocation } from "../hooks/useGeolocation";
 import Button from "./Button";
 import { useUrlPosition } from "../hooks/useUrlPosition";
+//import { useValues } from "../contexts/CitContext";
 
 function Map() {
-  const { cities } = useValues();
+  const { cities } = useCities();
   const [mapPosition, setMapPosition] = useState([40, 0]);  
   const {isLoading: isLoadingPosition,position:
      geoLocationPosition, getPosition,} = useGeolocation();
@@ -84,4 +86,4 @@ function DetectClick() {
   });
 }
 
-export default Map;
+export default Map;  
