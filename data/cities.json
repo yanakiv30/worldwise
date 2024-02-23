@@ -35,6 +35,42 @@
         "lng": 13.376933665713324
       },
       "id": "98443197"
+    },
+    {
+      "id": "3949",
+      "cityName": "Aguasal",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-02-23T17:11:13.757Z",
+      "notes": "gukugkg",
+      "position": {
+        "lat": "41.27778296029511",
+        "lng": "-4.637307462040151"
+      }
+    },
+    {
+      "id": "8497",
+      "cityName": "Prague",
+      "country": "Czechia",
+      "emoji": "🇨🇿",
+      "date": "2024-02-23T17:24:25.993Z",
+      "notes": "good",
+      "position": {
+        "lat": "50.06418849592342",
+        "lng": "14.42993697337713"
+      }
+    },
+    {
+      "id": "744b",
+      "cityName": "Velingrad",
+      "country": "Bulgaria",
+      "emoji": "🇧🇬",
+      "date": "2024-02-23T17:25:28.837Z",
+      "notes": "",
+      "position": {
+        "lat": "42.02858327701825",
+        "lng": "23.995791538481402"
+      }
     }
   ]
 }
