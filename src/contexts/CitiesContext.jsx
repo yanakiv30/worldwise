@@ -6,7 +6,7 @@ const CitiesContext = createContext();
 function CitiesProvider({ children }) {
   const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const[currentCity, setCurrentCity] = useState({});
+  const [currentCity, setCurrentCity] = useState({});
 
   useEffect(function () {
     async function fetchCities() {
@@ -20,16 +20,16 @@ function CitiesProvider({ children }) {
       } finally {
         setIsLoading(false);
       }
-    } 
+    }
     fetchCities();
   }, []);
 
-  async function getCity(id) {    
+  async function getCity(id) {
     try {
       setIsLoading(true);
       const res = await fetch(`${BASE_URL}/cities/${id}`);
       const data = await res.json();
-   setCurrentCity(data);
+      setCurrentCity(data);
     } catch {
       alert("There was an error loading data...");
     } finally {
@@ -38,16 +38,34 @@ function CitiesProvider({ children }) {
   }
 
   async function createCity(newCity) {
-    try{
+    try {
       setIsLoading(true);
-      const res = await fetch(`${BASE_URL}/cities`,{method: 'Post', body: JSON.stringify(newCity), headers:{"Content-Type": "application/json",},});
+      const res = await fetch(`${BASE_URL}/cities`, {
+        method: "Post",
+        body: JSON.stringify(newCity),
+        headers: { "Content-Type": "application/json" },
+      });
       const data = await res.json();
-      setCities((cities)=>[...cities, data]);
-    }catch{ alert("There was an error loading data...");
+      setCities((cities) => [...cities, data]);
+    } catch {
+      alert("There was an error creating data...");
+    } finally {
+      setIsLoading(false);
+    }
+  }
 
-    }finally{setIsLoading(false);}
-
-
+  async function deleteCity(id) {
+    try {
+      setIsLoading(true);
+      await fetch(`${BASE_URL}/cities/${id}`, {
+        method: "DELETE",
+      });
+      setCities((cities) => cities.filter((city) => city.id !== id));
+    } catch {
+      alert("There was an error deleting data...");
+    } finally {
+      setIsLoading(false);
+    }
   }
 
   return (
@@ -58,6 +76,7 @@ function CitiesProvider({ children }) {
         currentCity,
         getCity,
         createCity,
+        deleteCity,
       }}
     >
       {children}
@@ -65,8 +84,9 @@ function CitiesProvider({ children }) {
   );
 }
 function useCities() {
-    const context = useContext(CitiesContext);
-    if(context === undefined) throw new Error("CitiesContext was used outside the CitiesProvider");
-    return context;
+  const context = useContext(CitiesContext);
+  if (context === undefined)
+    throw new Error("CitiesContext was used outside the CitiesProvider");
+  return context;
 }
-export {CitiesProvider, useCities};
+export { CitiesProvider, useCities };
