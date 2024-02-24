@@ -49,27 +49,51 @@
       }
     },
     {
-      "id": "8497",
-      "cityName": "Prague",
-      "country": "Czechia",
-      "emoji": "🇨🇿",
-      "date": "2024-02-23T17:24:25.993Z",
-      "notes": "good",
+      "id": "4e1a",
+      "cityName": "Almatret",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-02-24T07:12:12.915Z",
+      "notes": "aaa",
       "position": {
-        "lat": "50.06418849592342",
-        "lng": "14.42993697337713"
+        "lat": "41.292439930567326",
+        "lng": "0.391631201884004"
       }
     },
     {
-      "id": "744b",
-      "cityName": "Velingrad",
-      "country": "Bulgaria",
-      "emoji": "🇧🇬",
-      "date": "2024-02-23T17:25:28.837Z",
+      "id": "444d",
+      "cityName": "Nogueruelas",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-02-24T07:12:21.504Z",
+      "notes": "ssss",
+      "position": {
+        "lat": "40.226256375422594",
+        "lng": "-0.6825151032010046"
+      }
+    },
+    {
+      "id": "d13e",
+      "cityName": "Mant",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2024-02-24T07:15:59.343Z",
       "notes": "",
       "position": {
-        "lat": "42.02858327701825",
-        "lng": "23.995791538481402"
+        "lat": "43.59549627481335",
+        "lng": "-0.5076860695513741"
+      }
+    },
+    {
+      "id": "1a98",
+      "cityName": "La Nava de Ricomalillo",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-02-24T08:30:42.562Z",
+      "notes": "",
+      "position": {
+        "lat": "39.65789411562397",
+        "lng": "-5.008983975476054"
       }
     }
   ]
