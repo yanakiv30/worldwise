@@ -73,18 +73,6 @@
       }
     },
     {
-      "id": "d13e",
-      "cityName": "Mant",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2024-02-24T07:15:59.343Z",
-      "notes": "",
-      "position": {
-        "lat": "43.59549627481335",
-        "lng": "-0.5076860695513741"
-      }
-    },
-    {
       "id": "8ec1",
       "cityName": "Puebla de Alcocer",
       "country": "Spain",
@@ -130,6 +118,18 @@
       "position": {
         "lat": "41.90224214780325",
         "lng": "-3.056068850568803"
+      }
+    },
+    {
+      "id": "0dce",
+      "cityName": "Sadaba",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-02-24T21:51:59.052Z",
+      "notes": "",
+      "position": {
+        "lat": "42.25962449457204",
+        "lng": "-1.2973305030068463"
       }
     }
   ]
