@@ -85,15 +85,51 @@
       }
     },
     {
-      "id": "1a98",
-      "cityName": "La Nava de Ricomalillo",
+      "id": "8ec1",
+      "cityName": "Puebla de Alcocer",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2024-02-24T08:30:42.562Z",
+      "date": "2024-02-24T11:48:52.644Z",
+      "notes": "dsdsfds",
+      "position": {
+        "lat": "39.07847501747996",
+        "lng": "-5.076669934475596"
+      }
+    },
+    {
+      "id": "60fd",
+      "cityName": "Oradour-sur-Glane",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2024-02-24T12:13:27.414Z",
       "notes": "",
       "position": {
-        "lat": "39.65789411562397",
-        "lng": "-5.008983975476054"
+        "lat": "45.93576520324766",
+        "lng": "1.0068359150172814"
+      }
+    },
+    {
+      "id": "c797",
+      "cityName": "Vilviestre del Pinar",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-02-24T12:22:59.532Z",
+      "notes": "",
+      "position": {
+        "lat": "41.90224214780325",
+        "lng": "-3.056068850568803"
+      }
+    },
+    {
+      "id": "ad61",
+      "cityName": "Vilviestre del Pinar",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-02-24T12:23:07.685Z",
+      "notes": "",
+      "position": {
+        "lat": "41.90224214780325",
+        "lng": "-3.056068850568803"
       }
     }
   ]
